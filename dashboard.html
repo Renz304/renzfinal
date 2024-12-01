@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+       body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigate ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: #0a5738;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+           
+        }
+
+        li a.active {   
+            background-color:white;
+            color: #0a5738;
+        }
+
+        li a:hover:not(.active) {
+            background-color: white;
+            color: #0a5738;
+    }
+    .header{
+        display: inline-flex;  
+        background-color: #0a5738; 
+        width: 100%; border: 2px solid black; 
+        margin-bottom: 2px;
+    }
+   
+    .box{
+        background-color: gray; 
+        width: 250px; 
+        height: 200px; 
+        padding: 10px; 
+        margin-top: 100px;
+        border-radius: 30px;
+    }
+    .box img{
+        width: 120px; 
+        height: 120px;
+        border-radius: 100%;
+    }
+    .box a{
+        text-decoration: none;
+        color: white;
+    }
+    .header2{
+        margin-top: 2px;
+        display: inline-flex;  
+        background-color: #0a5738; 
+        width: 100%; border: 2px solid black; 
+        gap: 80px;
+        justify-content: center; 
+        height: 500px;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="navigate">
+        <ul>  
+            <img src="user.png" style="border-radius: 100%;padding: 10px;">
+            <h1 style="color: white;">ADMIN</h1>
+            <li><a class="active" href="#index.html">Dashboard</a></li>
+            <li><a href="#managestudents">Manage Students</a></li>
+            <li><a href="#courses">View Courses</a></li>
+            <li><a href="#students">View Sections</a></li>
+            <a href="tab.html" style="text-decoration: none; color: #0a5738; background-color: white; border: 2px solid black;">LOG OUT</a>
+        </ul>
+        
+    </div> 
+
+    <div class="container" style="margin-left:15%;padding:0px 5px;height:500px;">
+        <div class="header">
+            <a href="index.html" style="text-decoration: none;">
+                <img src="logo.jpg" style="border-radius: 100%;width: 80px; height: 80px;">
+            </a>
+            <a href="index.html" style="text-decoration: none;">
+                <h1 style="color: white;">Evergreen Univeristy</h1>
+            </a>
+        </div>
+        
+        <div class="outer.content" style=" background-color: #0a5738; width: 100%; border: 2px solid black; ">
+            <div class="inner.content">
+                <div class="head" style="display: inline-flex; padding: 10px;">
+                    <img src="dashboard.png" style="width: 100px; height: 100px;padding-right:10px ;">
+                    <h1 style="font-size: 45px; color: white; gap: 10px;padding-right: 10px;">Dashboard</h1>
+                    <h1 style="color: white; padding-top: 20px;">Statistic Overview</h1>                   
+                </div>
+                <div class="year.content"  style="  background-color: gray; width: 100%; border: .1px solid black; ">
+                    <h1 style="color: white;margin-left: 10px;">Academic Year: 2024 - 2025</h1>
+                </div>
+               
+            </div>
+        </div>
+         <div class="header2" >
+            
+            <div class="box">
+                <div style="display: inline-flex; gap: 0px 40px;" >
+                    <img src="student.png">
+                    <h1 style="font-size: 50px;color: white;">0</h1>
+                </div>
+                <a href="#total"><h1 style="text-align: center;">Total Students</h1></a>
+            </div>
+
+            <div class="box">
+                <div style="display: inline-flex; gap: 0px 40px;" >
+                    <img src="course.png">
+                    <h1 style="font-size: 50px;color: white;">6</h1>
+                </div>
+                <a href="#total"><h1 style="text-align: center;">Total Courses</h1></a>
+            </div>
+
+            <div class="box">
+                <div style="display: inline-flex; gap: 0px 40px;" >
+                    <img src="books.png" >
+                    <h1 style="font-size: 50px;color: white;">50</h1>
+                </div>
+                <a href="#total"><h1 style="text-align: center;">Total Subjects</h1></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
